@@ -1,0 +1,76 @@
+{
+  "name": "hi2048-utils",
+  "version": "1.0.7",
+  "description": "Utils.",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "examples",
+    "src"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "webpack --env.prod",
+    "deploy": "gh-pages -d dist",
+    "publish": "npm run build && npm run deploy",
+    "server": "webpack-dev-server --open",
+    "compile": "webpack --env.publish",
+    "prepublishOnly": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hi2048/utils.git"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "苏小蜂",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hi2048/utils/issues"
+  },
+  "homepage": "https://github.com/hi2048/utils#readme",
+  "peerDependencies": {
+    "hi2048-utils": "^1.0.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "gh-pages": "^2.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^25.1.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "indexeddboperator": "^1.0.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  }
+}
